@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VueJs</title>
+</head>
+
+<body>
+    <!--se pega cdn de vuejs-->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <!-- se crea un div con id app, para que se pueda acceder desde el script-->
+    <div id="app">
+        <h1>{{ message }}</h1> <!-- se accede a la variable message-->
+    </div>
+
+    <script> // se crea un script para poder acceder a la instancia de vuejs-->
+        Vue.createApp({ // se crea la instancia de Vue con el metodo createApp
+            data() {
+                return {
+                    message: 'Hello World'   // se crea un objeto con la propiedad message
+                }
+            }
+        }).mount('#app') //*se monta la instancia en el div con id app, para que se pueda acceder desde el html
+    //*mount es el metodo que se encarga de montar la instancia en el html
+    </script> -->
+    
+
+
+</body>
+
+</html>
